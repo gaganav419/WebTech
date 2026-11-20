@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personal information</legend>
+            <h1>Captch Form</h1>
+            <label for="Captcha">Enter captch <span style="color:red";>*</span>:</label>
+            <input type="text" id="Captcha" name="Captcha" placeholder="Enter the captcha here" title="captcha should be more than 6 character" required autocomplete="off">
+            <br><br>
+            <label for="mail">Enter email :</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter the mail here" required>
+            <br><br>
+            <input type="color">
+            <br><br>
+            <input type="date">
+            <br><br>
+            <input type="datetime-local">
+            <br><br>
+            <input type="button" value="      OK         ">
+            <br><br>
+            <label for="Password">Password :</label>
+            <input type="password" id="Password" name="password" required>
+            <br><br>
+
+
+     <!--radio button-->
+     <label>
+        <input type="radio" name="gender" value="male">Male
+     </label>
+
+     <label>
+        <input type="radio" name="gender" value="female">Female
+     </label>
+     <br><br>
+
+     <!---checkbox-->
+     <label>
+        <input type="checkbox" name="option" value="option1">Option 1
+     </label>
+     
+     <label>
+        <input type="checkbox" name="option" value="option2">Option 2
+     </label>
+     <br><br>
+     </fieldset>
+     <br><br>
+
+     <!--textarea-->
+     <label for="comments">Comments :</label>
+     <textarea id="comments" name="comments" row="4" cols="40">
+        Enter the comments here........
+
+     </textarea>
+     <br><br>
+         <button type="sumbit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </body>
+</html>
+
+
+
