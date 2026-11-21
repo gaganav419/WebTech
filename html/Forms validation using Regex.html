@@ -12,11 +12,20 @@
         <input type="text" id="name" name="name" placeholder="enter the name here" required pattern="^[A-Z]{1}[a-z]{2,45}{1}[A-Z]{1}[a-z]{1,46}$">
         <br><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="enter the email here" required>
+        <input type="email" id="email" name="email" placeholder="enter the email here" required patter="^[a-zA-Z0-9./#&*!]+@[a-zA-Z0-9.\-]+\.[a-zA-z]{2,}$">
         <br><br>
         <label for="num">phone number:</label>
         <input type="tel" id="num" name="num" placeholder="enter the phone number  here" required patter="^+91[6-9]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}$">
         <br><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*/d)(?=.*[&@#%!])[a-zA-z./d&@#%!]{8,}$">
+        <br><br>
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+         <option  value="option1">HTML</option>
+         <option value="option2">CSS</option>
+         <option value="option3">JS</option>
+        </select>
 
         <input type="submit" value="Sumbit">
         <input type="reset" value="Cancel">
