@@ -1,0 +1,22 @@
+legend{
+    color:blue;
+}
+label{
+    color:purple;
+}
+
+/* uniiversal selector */
+* {
+    background-color:rgb(196, 187, 213);
+ }
+
+ /*type or element or tag selector */
+
+ label {
+    color:green;
+ }
+
+ /*id selector */
+ #dropdown {
+     font-style:italic;
+ }

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Simple HTML Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eef5ee;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #d8ead8;
+      border-bottom: 1px solid #9ab89a;
+      padding: 25px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 15px 0;
+      color: #214e34;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #214e34;
+      margin-right: 15px;
+      text-decoration: underline;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 25px 30px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #214e34;
+      font-size: 22px;
+    }
+
+    mark {
+      background-color: #fff272;
+      padding: 0 3px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #cccccc;
+      margin: 20px 0;
+    }
+
+    blockquote {
+      margin: 15px 0 15px 35px;
+    }
+
+    .list-box {
+      border: 1px solid #cccccc;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+
+    .list-box h3 {
+      margin-top: 0;
+      font-size: 17px;
+    }
+
+    figure {
+      margin: 0 0 20px 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      width: 550px;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    .abbr-box {
+      border: 1px solid #cccccc;
+      padding: 15px 20px;
+    }
+
+    abbr {
+      text-decoration: underline dotted;
+      cursor: help;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    caption {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f9f9f9;
+      font-weight: bold;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    form input[type="text"],
+    form textarea {
+      width: 260px;
+      padding: 8px;
+      border: 1px solid #999999;
+      margin-bottom: 15px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    form textarea {
+      height: 85px;
+      resize: both;
+    }
+
+    form button {
+      padding: 8px 16px;
+      background-color: #efefef;
+      border: 1px solid #888888;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    form button:hover {
+      background-color: #e2e2e2;
+    }
+
+    .example-area {
+      border: 1px dashed #999999;
+      padding: 15px 20px 20px 20px;
+      margin: 20px 0;
+    }
+
+    .example-title {
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .box-margin {
+      border: 1px dashed #b57c4c;
+      background-color: #fdf2e9;
+      padding: 10px 18px 18px 18px;
+    }
+
+    .box-border {
+      border: 6px solid #2e6b3e;
+      background-color: #ffffff;
+      padding: 10px 18px 18px 18px;
+      margin-top: 6px;
+    }
+
+    .box-padding {
+      border: 1px dashed #7aa384;
+      background-color: #e6f2e8;
+      padding: 10px 18px 18px 18px;
+      margin-top: 6px;
+    }
+
+    .box-content {
+      background-color: #ffd966;
+      text-align: center;
+      padding: 12px;
+      margin-top: 6px;
+    }
+
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>A Simple HTML Page</h1>
+    <nav>
+      <a href="#text">Text</a>
+      <a href="#lists">Lists</a>
+      <a href="#table">Table</a>
+      <a href="#box-model">Box model</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="text">
+      <h2>Text and links</h2>
+      <p>
+        HTML gives content its <strong>meaning</strong>. Text can be <em>emphasized</em>, 
+        <mark>highlighted</mark>, or written with H<sub>2</sub>O and x<sup>2</sup>.
+      </p>
+      <p>
+        Visit <a href="https://mozilla.org" target="_blank">the HTML reference</a> to learn more.
+      </p>
+      <hr>
+      <blockquote>
+        Good structure makes a page easier to read.
+      </blockquote>
+      <p><small>This is an example of smaller text.</small></p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists and an image</h2>
+      
+      <div class="list-box">
+        <h3>Things on a web page</h3>
+        <ul>
+          <li>Headings and paragraphs</li>
+          <li>Links and images</li>
+          <li>Lists and forms</li>
+        </ul>
+
+        <ol>
+          <li>Write HTML</li>
+          <li>Add CSS</li>
+          <li>Open the page</li>
+        </ol>
+      </div>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Close-up of a computer circuit board">
+        <figcaption>A figure can pair an image with a caption.</figcaption>
+      </figure>
+
+      <div class="abbr-box">
+        <abbr title="HyperText Markup Language">HTML</abbr> describes the content of this page.
+      </div>
+    </section>
+
+    <section id="table">
+      <h2>A small table</h2>
+      <table>
+        <caption>Web page building blocks</caption>
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Style</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>A simple form</h2>
+      <form action="#" method="post">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="box-model">
+      <h2>The CSS box model</h2>
+      <p>Every element has content, padding, a border, and margin. The nested boxes below show each layer.</p>
+
+      <div class="example-area">
+        <span class="example-title">Example area</span>
+        <div class="box-margin">
+          Margin
+          <div class="box-border">
+            Border
+            <div class="box-padding">
+              Padding
+              <div class="box-content">
+                Content
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><code>box-sizing: border-box;</code> makes an element's padding and border part of its declared size.</p>
+    </section>
+  </main>
+
+</body>
+</html>
